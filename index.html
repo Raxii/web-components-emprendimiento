@@ -3,39 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Práctica de laboratorio · tarjeta-producto</title>
+  <title>StepUp Sneakers</title>
   <link rel="stylesheet" href="./estilos.css">
-
-  <!-- PASO 1 · La página solo importa el módulo del componente.
-       Ábrela con Live Server: los módulos no cargan con file:// -->
   <script type="module" src="./componentes/tarjeta-producto.js"></script>
 </head>
 <body>
-  <!-- Cambia el título por el nombre de tu emprendimiento -->
-  <h1>Nombre de tu emprendimiento</h1>
+  <header class="encabezado">
+    <h1>StepUp Sneakers</h1>
+    <p>Calzado urbano para estudiantes y jóvenes que buscan comodidad y estilo.</p>
+  </header>
 
-  <!-- PASO 4 · Usa la tarjeta tres veces con productos REALES de tu emprendimiento:
-       cambia la foto, el nombre, la descripción y el precio de cada una. -->
   <main class="catalogo">
-
-    <tarjeta-producto precio="0">
-      <img slot="foto" src="./img/producto-1.svg" alt="Describe la foto del producto 1">
-      <h3 slot="nombre">Producto 1</h3>
-      <p>Descripción corta del producto 1</p>
+    <!-- TARJETA BYRON -->
+    <tarjeta-producto precio="69.99" destacado>
+      <img slot="foto" src="./img/Byron.png" alt="Zapatilla Urban Classic">
+      <h3 slot="nombre">Urban Classic</h3>
+      <p>Zapatilla urbana cómoda, resistente y pensada para uso diario.</p>
     </tarjeta-producto>
+    <!-- FIN TARJETA BYRON -->
 
-    <tarjeta-producto precio="0">
-      <img slot="foto" src="./img/producto-2.svg" alt="Describe la foto del producto 2">
-      <h3 slot="nombre">Producto 2</h3>
-      <p>Descripción corta del producto 2</p>
-    </tarjeta-producto>
+    <!-- TARJETA MATEO -->
+    <div data-aporte="mateo"></div>
+    <!-- FIN TARJETA MATEO -->
 
-    <tarjeta-producto precio="0">
-      <img slot="foto" src="./img/producto-3.svg" alt="Describe la foto del producto 3">
-      <h3 slot="nombre">Producto 3</h3>
-      <p>Descripción corta del producto 3</p>
-    </tarjeta-producto>
+    <!-- TARJETA ESTEFI -->
+    <div data-aporte="estefi"></div>
+    <!-- FIN TARJETA ESTEFI -->
 
+    <!-- TARJETA CARLOS -->
+    <div data-aporte="carlos"></div>
+    <!-- FIN TARJETA CARLOS -->
   </main>
 </body>
 </html>
