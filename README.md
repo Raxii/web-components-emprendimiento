@@ -5,7 +5,7 @@ Programación Integrativa de Componentes Web · Unidad 1: Web Components
 | Dato | Información |
 |---|---|
 | Emprendimiento | StepUp Sneakers |
-| Estudiantes | Byron Aguillar, Mateo Villacreces  , Estefania Arana  , Carlos Carrasco|
+| Estudiantes | Byron Aguilar, Mateo Villacreces  , Estefania Arana  , Carlos Carrasco|
 | NRC | 36642 |
 | Fecha | 13 de octubre de 2026 |
 | Enlace del repositorio | https://github.com/Raxii/web-components-emprendimiento |
