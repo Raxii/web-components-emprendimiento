@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 380" role="img" aria-label="Canvas Pro">
-  <rect width="700" height="380" rx="30" fill="#efe2d3"/>
-  <path d="M92 244c74-16 118-59 158-132 16-29 47-38 70-14l71 76c55 26 122 43 190 62 38 11 58 31 50 52-8 24-39 39-84 40H150c-61 0-91-22-89-49 1-16 11-27 31-35z" fill="#8A5A2B"/>
-  <path d="M90 270c113 18 237 15 355 0 74-9 130-16 188 2 20 6 29 18 24 31-7 20-37 30-75 31H144c-47-1-74-13-79-32-4-14 6-26 25-32z" fill="#f5f0e9" stroke="#c8b8a1" stroke-width="8"/>
-  <path d="M234 136l111 36M218 158l110 36M202 181l106 34" stroke="#ffffff" stroke-width="12" stroke-linecap="round" opacity=".9"/>
-  <path d="M360 185c55 24 113 43 177 57" fill="none" stroke="#ffffff" stroke-width="11" stroke-linecap="round" opacity=".75"/>
-  <circle cx="240" cy="136" r="8" fill="#ffffff"/><circle cx="224" cy="159" r="8" fill="#ffffff"/><circle cx="208" cy="182" r="8" fill="#ffffff"/>
-</svg>
