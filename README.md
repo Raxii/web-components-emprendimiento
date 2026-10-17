@@ -110,8 +110,11 @@ Resultado esperado: la primera tarjeta muestra `$25.00`.
 
 - [x] El atributo `destacado` cambia el borde con `:host([destacado])`.
 
-## Uso de inteligencia artificial
+## Herramientas utilizadas
 
-- **Herramienta usada:** ChatGPT.
-- **Para qué se consultó:** apoyo para estructurar el componente, revisar Shadow DOM, atributos, estilos, rutas y el flujo de Git.
-- **Qué cambió o comprobó el equipo:** productos, precios, textos, organización del repositorio y pruebas en el navegador.
+- Visual Studio Code: utilizado para desarrollar, editar y probar los archivos HTML, CSS y JavaScript del proyecto.
+- Live Server: utilizado para ejecutar el proyecto localmente y comprobar el funcionamiento de los componentes web.
+- Git y GitHub: utilizados para trabajar con las ramas individuales de cada integrante, realizar commits, subir cambios e integrar el trabajo del equipo.
+- ChatGPT: utilizado de forma puntual como apoyo para revisar algunos errores y orientar al equipo en los comandos de Git necesarios para subir e integrar los aportes de todos los integrantes en GitHub.
+
+El desarrollo, modificación, revisión y pruebas del código fueron realizados por los integrantes del equipo.
