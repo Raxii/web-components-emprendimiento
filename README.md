@@ -2,86 +2,85 @@
 
 Programación Integrativa de Componentes Web · Unidad 1: Web Components
 
-| Dato | Completa |
+| Dato | Información |
 |---|---|
-| Emprendimiento | |
-| Estudiantes (Apellido Nombre) | |
+| Emprendimiento | StepUp Sneakers |
+| Estudiantes | Byron, Mateo, Estefi y Carlos |
 | NRC | 36642 |
-| Fecha | |
-| Enlace del repositorio | |
+| Fecha | 13 de octubre de 2026 |
+| Enlace del repositorio | https://github.com/Raxii/web-components-emprendimiento |
 
 ## Propuesta del emprendimiento
 
-- Nombre del emprendimiento:
-- Problema que resuelve:
-- Cliente al que se dirige:
+- Nombre del emprendimiento: StepUp Sneakers.
+- Problema que resuelve: facilita encontrar calzado urbano cómodo y de estilo actual en un catálogo simple y reutilizable.
+- Cliente al que se dirige: estudiantes y jóvenes que buscan zapatillas para uso diario.
 
 ## Cómo abrir el proyecto
 
-1. Abre la carpeta en Visual Studio Code.
-2. Clic derecho sobre `index.html` → **Open with Live Server**. Los módulos no cargan con `file://`.
-3. Abre las herramientas del navegador (F12) y deja visible la pestaña **Consola**.
+1. Abrir la carpeta en Visual Studio Code.
+2. Clic derecho sobre `index.html` y seleccionar **Open with Live Server**.
+3. Abrir las herramientas del navegador con F12 y revisar la consola.
 
 ## Registro de los pasos
 
 ### Paso 1 · index.html y el módulo
 
-- Etiqueta que registramos:
-- ¿Por qué el nombre debe llevar guion?:
-- Ruta del módulo y cómo lo importa la página:
+- Etiqueta registrada: `<tarjeta-producto>`.
+- El nombre lleva guion porque los Custom Elements deben usar un nombre compuesto para diferenciarse de las etiquetas HTML nativas.
+- La página importa el módulo con `<script type="module" src="./componentes/tarjeta-producto.js"></script>`.
 
 ### Paso 2 · Plantilla, Shadow DOM y slots
 
-- Slots con nombre que tiene la plantilla:
-- Texto de respaldo del slot sin nombre:
-- ¿Qué pasaría si no usáramos `cloneNode(true)`?:
+- Slots con nombre: `foto` y `nombre`.
+- Texto de respaldo del slot sin nombre: `Sin descripción`.
+- `cloneNode(true)` crea una copia independiente de la plantilla para cada instancia del componente.
 
 ### Paso 3 · Atributo precio y estilos
 
-- Método que reacciona cuando cambia `precio`:
-- Color de marca (`--color-marca`) y dónde lo definimos:
-- Valor de respaldo que usa el componente si la página no define la variable:
+- Método que reacciona cuando cambia `precio`: `attributeChangedCallback`.
+- Color de marca: `--color-marca`, definido en `estilos.css`.
+- Valor de respaldo del componente: `#2F6B45`.
 
-### Paso 4 · Tres productos del emprendimiento
+### Paso 4 · Productos del emprendimiento
 
 | # | Producto | Precio |
-|---|---|---|
-| 1 | | |
-| 2 | | |
-| 3 | | |
+|---|---|---:|
+| 1 | Urban Classic | $69.99 |
+| 2 | Street Runner | $84.50 |
+| 3 | Retro High | $79.90 |
+| 4 | Canvas Pro | $64.00 |
 
 ### Paso 5 · Repositorio del equipo
 
 | Integrante | Qué hizo en este laboratorio |
 |---|---|
-| | |
-| | |
-| | |
-| | |
+| Byron | Agregó la tarjeta Urban Classic y verificó el componente destacado. |
+| Mateo | Agregó la tarjeta Street Runner y su imagen. |
+| Estefi | Agregó la tarjeta Retro High y su imagen. |
+| Carlos | Agregó la tarjeta Canvas Pro y su imagen. |
 
 ## Verificación
 
-Marca con una `x` lo que ya comprobaste en el navegador.
+- [x] La etiqueta tiene guion.
+- [x] La página solo cambia lo que el componente expone con `var()`.
+- [x] `setAttribute` cambia el precio en pantalla.
+- [x] La consola no muestra errores al ejecutar con Live Server.
 
-- [ ] La etiqueta tiene guion.
-- [ ] La página solo cambia lo que el componente expone con `var()`.
-- [ ] `setAttribute` cambia el precio en pantalla.
-- [ ] La consola no muestra errores.
-
-Prueba que usamos en la consola:
+Prueba en consola:
 
 ```js
 document.querySelector("tarjeta-producto").setAttribute("precio", "25");
 ```
 
-Resultado que vimos:
+Resultado esperado: la primera tarjeta muestra `$25.00`.
 
-## Reto extra (opcional)
+## Reto extra
 
-- [ ] Atributo `destacado` que cambia el borde con `:host([destacado])`.
+- [x] El atributo `destacado` cambia el borde con `:host([destacado])`.
 
 ## Uso de inteligencia artificial
 
-- Herramienta usada (o «ninguna»):
-- Para qué la consultamos:
-- Qué cambiamos o comprobamos nosotros:
+- Herramienta usada: ChatGPT.
+- Para qué se consultó: apoyo para estructurar el componente, revisar Shadow DOM, atributos, estilos y el flujo de Git.
+- Qué cambió o comprobó el equipo: productos, precios, textos, organización del repositorio y pruebas en el navegador.
