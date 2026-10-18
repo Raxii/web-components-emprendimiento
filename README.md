@@ -78,7 +78,7 @@ Programación Integrativa de Componentes Web · Unidad 1: Web Components
 
 | Integrante | Qué hizo en este laboratorio |
 |---|---|
-| Byron Aguillar | Agregó la tarjeta Urban Classic y verificó el componente destacado. |
+| Byron Aguillar | Agregó la tarjeta Urban Classic y verificó el componente usado |
 | Mateo Villacreces | Agregó la tarjeta Street Runner y su imagen. |
 | Estefania Arana | Agregó la tarjeta Retro High y su imagen. |
 | Carlos Carrasco | Agregó la tarjeta Canvas Pro y su imagen. |
