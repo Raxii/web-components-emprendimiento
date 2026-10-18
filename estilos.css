@@ -1,22 +1,38 @@
-/* estilos.css · estilos de la PÁGINA (no del componente) */
-
 body {
   font-family: system-ui, Arial, sans-serif;
   margin: 0;
-  padding: 24px;
+  padding: 28px;
   background: #F2F3EF;
   color: #1F2A24;
 }
 
-.catalogo {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-  max-width: 900px;
+.encabezado {
+  max-width: 1100px;
+  margin: 0 auto 24px;
 }
 
-/* PASO 3 · Aquí la página le entrega al componente el color de tu marca.
-   Cambia el valor por el color de tu emprendimiento. */
+.encabezado h1 {
+  margin-bottom: 6px;
+}
+
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
 tarjeta-producto {
   --color-marca: #2F6B45;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 16px;
+  }
+
+  .catalogo {
+    grid-template-columns: 1fr;
+  }
 }
