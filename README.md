@@ -178,7 +178,7 @@ El atributo opcional `destacado` modifica el borde con `:host([destacado])`.
 - **Visual Studio Code:** edición de HTML, CSS y JavaScript.
 - **Live Server:** ejecución local y pruebas en el navegador.
 - **Git y GitHub:** ramas individuales, commits, Pull Requests e integración.
-- **ChatGPT:** asistencia en la elaboración y adaptación de ejemplos de código JavaScript, estilos CSS de las tarjetas, estructura HTML, documentación y orientación para Git/GitHub.
+- **ChatGPT:** asistencia en la elaboración  estilos CSS de las tarjetas y orientación para Git/GitHub.
 
 El equipo es responsable de **revisar, comprender, ajustar y probar** todo el código antes de la entrega, así como de poder explicar su funcionamiento.
 
