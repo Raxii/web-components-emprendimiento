@@ -1,38 +1,46 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>StepUp Sneakers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FunkoManía - Sheriff Woody</title>
   <link rel="stylesheet" href="./estilos.css">
-  <script type="module" src="./componentes/tarjeta-byron.js"></script>
 </head>
+
 <body>
-  <header class="encabezado">
-    <h1>StepUp Sneakers</h1>
-    <p>Calzado urbano para estudiantes y jóvenes que buscan comodidad y estilo.</p>
+
+  <header>
+    <h1>FunkoManía</h1>
+    <p>Encuentra tus personajes favoritos y agrégalos a tu colección.</p>
   </header>
 
   <main class="catalogo">
+
     <!-- TARJETA BYRON -->
-    <tarjeta-producto precio="69.99" destacado>
-      <img slot="foto" src="./img/Byron.png" alt="Zapatilla Urban Classic">
-      <h3 slot="nombre">Urban Classic</h3>
-      <p>Zapatilla urbana cómoda, resistente y pensada para uso diario.</p>
-    </tarjeta-producto>
-    <!-- FIN TARJETA BYRON -->
+    <tarjeta-byron class="tarjeta-4" precio="21" destacado>
 
-    <!-- TARJETA MATEO -->
-    <div data-aporte="mateo"></div>
-    <!-- FIN TARJETA MATEO -->
+      <img
+        slot="foto"
+        src="./img/woody_1.png"
+        alt="Funko Pop del Sheriff Woody"
+      >
 
-    <!-- TARJETA ESTEFI -->
-    <div data-aporte="estefi"></div>
-    <!-- FIN TARJETA ESTEFI -->
+      <h3 slot="nombre">Sheriff Woody</h3>
 
-    <!-- TARJETA CARLOS -->
-    <div data-aporte="carlos"></div>
-    <!-- FIN TARJETA CARLOS -->
+      <p slot="descripcion">
+        ¡La aventura nunca termina con un buen amigo!
+        El Sheriff Woody, el querido vaquero de Toy Story,
+        representa la amistad, la valentía y la lealtad.
+        Una figura llena de nostalgia para pequeños
+        y grandes coleccionistas.
+      </p>
+
+    </tarjeta-byron>
+
   </main>
+
+  <script type="module" src="./componentes/tarjeta-byron.js"></script>
+
 </body>
 </html>
