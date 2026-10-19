@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>StepUp Sneakers</title>
   <link rel="stylesheet" href="./estilos.css">
-  <script type="module" src="./componentes/tarjeta-producto.js"></script>
+  <script type="module" src="./componentes/tarjeta-.js"></script>
 </head>
 <body>
   <header class="encabezado">
@@ -15,7 +15,7 @@
 
   <main class="catalogo">
     <!-- TARJETA BYRON -->
-       <tarjeta-producto precio="69.99" destacado>
+    <tarjeta-producto precio="69.99" destacado>
       <img slot="foto" src="./img/Byron.png" alt="Zapatilla Urban Classic">
       <h3 slot="nombre">Urban Classic</h3>
       <p>Zapatilla urbana cómoda, resistente y pensada para uso diario.</p>
@@ -23,27 +23,15 @@
     <!-- FIN TARJETA BYRON -->
 
     <!-- TARJETA MATEO -->
-    <tarjeta-producto precio="84.50">
-      <img slot="foto" src="./img/zapatoM.png" alt="Zapatilla Street Runner">
-      <h3 slot="nombre">Street Runner</h3>
-      <p>Zapatilla urbana cómoda, elegante, resistente y pensada para uso diario.</p>
-    </tarjeta-producto>
+    <div data-aporte="mateo"></div>
     <!-- FIN TARJETA MATEO -->
 
-       <!-- TARJETA ESTEFI -->
-    <tarjeta-producto precio="79.90">
-      <img slot="foto" src="./img/estefi.jpg" alt="Zapatilla Retro High">
-      <h3 slot="nombre">Retro High</h3>
-      <p>Zapatilla urbana cómoda, resistente y pensada para uso diario.</p>
-    </tarjeta-producto>
+    <!-- TARJETA ESTEFI -->
+    <div data-aporte="estefi"></div>
     <!-- FIN TARJETA ESTEFI -->
 
     <!-- TARJETA CARLOS -->
-    <tarjeta-producto precio="64.00">
-        <img slot="foto" src="./img/carlos.jpg" alt="Zapatilla Canvas Pro">
-        <h3 slot="nombre">Canvas Pro</h3>
-        <p>Zapatilla urbana cómoda, resistente y pensada para uso diario.</p>
-    </tarjeta-producto>
+    <div data-aporte="carlos"></div>
     <!-- FIN TARJETA CARLOS -->
   </main>
 </body>
