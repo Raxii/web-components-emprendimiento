@@ -1,22 +1,107 @@
-/* estilos.css · estilos de la PÁGINA (no del componente) */
+
+/* Estilos generales */
 
 body {
-  font-family: system-ui, Arial, sans-serif;
   margin: 0;
-  padding: 24px;
-  background: #F2F3EF;
-  color: #1F2A24;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  background-color: #F3F0EB;
+  color: #252525;
 }
+
+header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+header h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: #242424;
+}
+
+header p {
+  font-size: 16px;
+  color: #666666;
+}
+
+/* Distribucion de las tarjetas */
 
 .catalogo {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-  max-width: 900px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  max-width: 1180px;
+  margin: 0 auto;
 }
 
-/* PASO 3 · Aquí la página le entrega al componente el color de tu marca.
-   Cambia el valor por el color de tu emprendimiento. */
-tarjeta-producto {
-  --color-marca: #2F6B45;
+/* Tarjeta 1: Vegapunk */
+
+.tarjeta-1 {
+  grid-column: span 2;
+  --color-marca: #B7374D;
+  --color-fondo: #FFF8F0;
+  --color-panel: #F9E2CF;
+  --color-texto: #3D2630;
+  --color-boton: white;
+  --radio-borde: 20px;
+  --direccion: row;
+  --alto: 360px;
+}
+
+/* Tarjeta 2: Nami */
+
+.tarjeta-2 {
+  --color-marca: #D86A1E;
+  --color-fondo: #FFFAF0;
+  --color-panel: #E9F3FC;
+  --color-texto: #32455D;
+  --color-boton: white;
+  --radio-borde: 20px;
+  --direccion: column;
+  --alto: 440px;
+}
+
+/* Tarjeta 3: Vecna */
+
+.tarjeta-3 {
+  --color-marca: #E35D6A;
+  --color-fondo: #210E17;
+  --color-panel: #421C25;
+  --color-texto: #F7EDEE;
+  --color-boton: #210E17;
+  --radio-borde: 20px;
+  --direccion: column-reverse;
+  --alto: 440px;
+}
+
+/* Tarjeta 4: Woody */
+
+.tarjeta-4 {
+  grid-column: span 2;
+  --color-marca: #8C4F19;
+  --color-fondo: #FFF6E6;
+  --color-panel: #F4D879;
+  --color-texto: #452B19;
+  --color-boton: white;
+  --radio-borde: 20px;
+  --direccion: row-reverse;
+  --alto: 360px;
+}
+
+/* Adaptacion para pantallas pequeñas */
+
+@media (max-width: 760px) {
+  body {
+    padding: 15px;
+  }
+
+  .catalogo {
+    grid-template-columns: 1fr;
+  }
+
+  .tarjeta-1,
+  .tarjeta-4 {
+    grid-column: span 1;
+  }
 }

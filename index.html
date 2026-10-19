@@ -2,45 +2,45 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>StepUp Sneakers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FunkoManía - Dr. Vegapunk</title>
   <link rel="stylesheet" href="./estilos.css">
-  <script type="module" src="./componentes/tarjeta-producto.js"></script>
 </head>
+
 <body>
-  <header class="encabezado">
-    <h1>StepUp Sneakers</h1>
-    <p>Calzado urbano para estudiantes y jóvenes que buscan comodidad y estilo.</p>
+
+  <header>
+    <h1>FunkoManía</h1>
+    <p>Encuentra tus personajes favoritos y agrégalos a tu colección.</p>
   </header>
 
   <main class="catalogo">
-    <!-- TARJETA BYRON -->
-    <div data-aporte="byron"></div>
-    <!-- FIN TARJETA BYRON -->
-
-    <!-- TARJETA MATEO -->
-    <tarjeta-producto precio="84.50">
-      <img slot="foto" src="./img/zapatoM.png" alt="Zapatilla Street Runner">
-      <h3 slot="nombre">Street Runner</h3>
-      <p>Zapatilla urbana cómoda, elegante, resistente y pensada para uso diario.</p>
-    </tarjeta-producto>
-    <!-- FIN TARJETA MATEO -->
-
-       <!-- TARJETA ESTEFI -->
-    <tarjeta-producto precio="79.90">
-      <img slot="foto" src="./img/estefi.jpg" alt="Zapatilla Retro High">
-      <h3 slot="nombre">Retro High</h3>
-      <p>Zapatilla urbana cómoda, resistente y pensada para uso diario.</p>
-    </tarjeta-producto>
-    <!-- FIN TARJETA ESTEFI -->
 
     <!-- TARJETA CARLOS -->
-    <tarjeta-producto precio="64.00">
-        <img slot="foto" src="./img/carlos.jpg" alt="Zapatilla Canvas Pro">
-        <h3 slot="nombre">Canvas Pro</h3>
-        <p>Zapatilla urbana cómoda, resistente y pensada para uso diario.</p>
-    </tarjeta-producto>
-    <!-- FIN TARJETA CARLOS -->
+    <tarjeta-carlos class="tarjeta-1" precio="22">
+
+      <img
+        slot="foto"
+        src="./img/Vegapunk.webp"
+        alt="Funko Pop de Dr. Vegapunk"
+      >
+
+      <h3 slot="nombre">Dr. Vegapunk</h3>
+
+      <p slot="descripcion">
+        ¡La ciencia llega a tu colección!
+        Desde la isla Egghead de One Piece,
+        el genial Dr. Vegapunk destaca por su
+        enorme inteligencia y su peculiar apariencia.
+        Una figura perfecta para los seguidores
+        de los grandes misterios del anime.
+      </p>
+
+    </tarjeta-carlos>
+
   </main>
+
+  <script type="module" src="./componentes/tarjeta-carlos.js"></script>
+
 </body>
 </html>
